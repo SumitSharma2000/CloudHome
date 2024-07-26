@@ -25,6 +25,6 @@ app.use("/api/v1/folder", folderRouter);
 app.use("/api/v1/fileFolder", filefolderRouter);
 app.use("/api/v1/file", fileRouter);
 
-app.listen(process.env.port || 8080, ()=>{
-    console.log("server is running on port " + process.env.port);
+app.listen(process.env.PORT || 8080, ()=>{
+    console.log(`Server started on PORT:${process.env.PORT}`);
 })
