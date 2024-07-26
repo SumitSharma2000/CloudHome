@@ -5,7 +5,7 @@ const useVerifyOtp = () => {
     const dispatch = useDispatch();
     const verifyOtp = async (otp) => {
       try {
-        const response = await fetch(`${process.env.BACKEND_URL}/api/v1/auth/verifyOtp`, {
+        const response = await fetch(`https://cloudhome-1.onrender.com/api/v1/auth/verifyOtp`, {
           method: 'POST',
           body: JSON.stringify({ otp}),
           headers: {

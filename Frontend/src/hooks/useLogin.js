@@ -6,7 +6,7 @@ const useLogin = () => {
   const login = async ({ email, password }) => {
     try {
       const response = await fetch(
-        `${process.env.BACKEND_URL}/api/v1/auth/login`,
+        `https://cloudhome-1.onrender.com/api/v1/auth/login`,
         {
           method: "POST",
           headers: {

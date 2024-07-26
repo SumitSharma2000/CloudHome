@@ -10,7 +10,7 @@ const useUploadFile = () => {
       const formData = new FormData();
       formData.append("file", file);
       formData.append("parentId", parentId);
-      const res = await fetch(`${process.env.BACKEND_URL}/api/v1/file`, {
+      const res = await fetch(`https://cloudhome-1.onrender.com/api/v1/file`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

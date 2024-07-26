@@ -6,7 +6,7 @@ const useRenameFolder = () => {
   const renameFolder = async ( id, newName ) => {
     try {
       const res = await fetch(
-        `${process.env.BACKEND_URL}/api/v1/folder/rename`,
+        `https://cloudhome-1.onrender.com/api/v1/folder/rename`,
         {
           method: "PATCH",
           headers: {
