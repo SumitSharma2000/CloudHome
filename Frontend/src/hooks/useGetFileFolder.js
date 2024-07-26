@@ -7,7 +7,7 @@ const useGetFileFolders = () => {
   const getFileFolders = async (parentId = null) => {
     try {
       const response = await fetch(
-        `https://cloudhome-1.onrender.com/api/v1/fileFolder`,
+        `${process.env.BACKEND_URL}/api/v1/fileFolder`,
         {
             method: "POST",
             body: JSON.stringify({ parentId }),

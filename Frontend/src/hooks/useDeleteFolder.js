@@ -5,7 +5,7 @@ const useDeleteFolder = () => {
   const deleteFolder = async (id) => {
     
     try {
-      const res = await fetch(`https://cloudhome-1.onrender.com/api/v1/folder/delete`, {
+      const res = await fetch(`${process.env.BACKEND_URL}/api/v1/folder/delete`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

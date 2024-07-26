@@ -6,7 +6,7 @@ const useLogin = () => {
   const login = async ({ email, password }) => {
     try {
       const response = await fetch(
-        `https://cloudhome-1.onrender.com/api/v1/auth/login`,
+        `${process.env.BACKEND_URL}/api/v1/auth/login`,
         {
           method: "POST",
           headers: {
@@ -23,6 +23,7 @@ const useLogin = () => {
         alert(data.message);
       }
     } catch (error) {
+      console.log("error------>" , error)
       alert("login error");
     }
   };
