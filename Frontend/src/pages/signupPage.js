@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useSignup from "../hooks/useSignup";
 import googleLogo from "../images/google_logo.png";
-import linkedinLogo from '../../src/images/linkedin_logo.png';
+import linkedinLogo from '../images/linkedin_logo.png';
 import githubLogo from "../images/github_logo.png";
 import facebookLogo from "../images/fb_logo.jpg";
 
